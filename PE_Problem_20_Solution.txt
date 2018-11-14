@@ -1,0 +1,14 @@
+def fact(n):   
+    if n <= 1:
+        return 1
+    return n * fact(n - 1)
+    
+result = str(fact(100))
+print (result)
+
+sum1 = 0
+for i in result:
+    sum1 += int(i)
+    
+print (sum1)
+
