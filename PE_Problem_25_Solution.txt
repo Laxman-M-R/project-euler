@@ -1,0 +1,26 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Thu Feb  8 14:12:38 2018
+
+@author: RM81458
+"""
+#memo = {}
+def fib(n):    
+    a,b = 1,1
+    for i in range(1,n+1):        
+        if i <= 2: 
+            f = 1
+        else: 
+            f = a + b
+            a,b = b,f
+ #           b = f
+ #       memo[i] = f
+    return f
+    
+res = str((fib(4782)))
+print(res[0])
+print(len(res))
+
+
+
+
